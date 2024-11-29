@@ -1,0 +1,17 @@
+.button{
+    background-color: #0D6EFD;
+    border: none;
+    padding: 0.8rem;
+    color: white;
+    font-size: 0.8rem;
+    border-radius: 5px;
+    display: block;
+}
+
+.list{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 3rem;
+    list-style: none;
+}
