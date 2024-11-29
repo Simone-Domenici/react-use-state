@@ -1,0 +1,16 @@
+.card_wrapper{
+    display: flex;
+    justify-content: center;
+    padding: 0.8rem;
+    margin-top: 1.5rem;
+}
+
+.card{
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 800px;
+}

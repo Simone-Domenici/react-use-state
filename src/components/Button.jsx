@@ -4,22 +4,26 @@ import languages from "../languages.js";
 
 
 
-function Button({ language }) { 
+function Button({ language , onClick, isSelected }) { 
     const { title } = language;
   
     return (
-      <button className={styles.button}>
+      <button className={`${styles.button} ${isSelected ? styles.selected : ''}`} onClick={onClick}>
         <p>{title}</p>
       </button>
     );
   }
   
-  function ButtonList() {
+  function ButtonList({languages, onLanguageClick, selectedLanguage}) {
     return (
       <ul className={styles.list}>
         {languages.map((language) => (
           <li key={language.id}> 
-            <Button language={language} />
+            <Button 
+            language={language} 
+            onClick={() => onLanguageClick(language)}
+            isSelected={language === selectedLanguage}
+            />
           </li>
         ))}
       </ul>
